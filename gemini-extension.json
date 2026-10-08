@@ -1,0 +1,11 @@
+{
+  "name": "aeon",
+  "version": "1.0.0",
+  "description": "Connect your coding agent to Aeon's hosted MCP server to run and manage your Aeon autonomous agent from chat: skills, runs, memory, strategy, packs and settings. Sign in with GitHub, no API key.",
+  "mcpServers": {
+    "aeon": {
+      "httpUrl": "https://www.aeon.fun/connect/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

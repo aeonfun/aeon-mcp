@@ -1,0 +1,31 @@
+{
+  "name": "aeon",
+  "owner": {
+    "name": "Aaron Elijah Mars",
+    "email": "aaron@aeon.fun"
+  },
+  "metadata": {
+    "description": "Aeon plugins for coding agents"
+  },
+  "plugins": [
+    {
+      "name": "aeon",
+      "source": "./",
+      "description": "Connect your coding agent to Aeon's hosted MCP server to run and manage your Aeon autonomous agent from chat: skills, runs, memory, strategy, packs and settings. Sign in with GitHub, no API key.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Aaron Elijah Mars",
+        "email": "aaron@aeon.fun"
+      },
+      "homepage": "https://www.aeon.fun/connect",
+      "repository": "https://github.com/aeonfun/aeon-mcp",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "aeon",
+        "mcp",
+        "autonomous-agent"
+      ]
+    }
+  ]
+}
