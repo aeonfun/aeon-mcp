@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "aeon": {
+      "type": "streamable-http",
+      "url": "https://www.aeon.fun/connect/mcp",
+      "description": "Aeon hosted MCP server: skills, runs, memory, strategy, packs and settings. Sign in with GitHub.",
+      "timeout": 60000
+    }
+  }
+}

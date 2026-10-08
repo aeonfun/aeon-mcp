@@ -2,7 +2,7 @@
 
 # Aeon MCP
 
-Connect your coding agent to [Aeon](https://www.aeon.fun/connect), the open-source autonomous agent that runs skills on a schedule with GitHub Actions in your own repo. This repo is a small plugin and extension that points Claude Code, Codex, Gemini CLI, Cursor, VS Code, GitHub Copilot CLI and Grok at Aeon's hosted MCP server. There is nothing to run locally and no API key.
+Connect your coding agent to [Aeon](https://www.aeon.fun/connect), the open-source autonomous agent that runs skills on a schedule with GitHub Actions in your own repo. This repo is a small plugin and extension that points Claude Code, Codex, Gemini CLI, Cursor, VS Code, GitHub Copilot CLI, Kimi Code, Kiro, Grok and other clients at Aeon's hosted MCP server. There is nothing to run locally and no API key.
 
 **Server URL:** `https://www.aeon.fun/connect/mcp` (remote, Streamable HTTP, OAuth 2.1 with PKCE)
 
@@ -33,7 +33,11 @@ claude plugin install aeon@aeon
 codex mcp add aeon --url https://www.aeon.fun/connect/mcp
 ```
 
-If the sign-in window does not open, run `codex mcp login aeon`.
+If the sign-in window does not open, run `codex mcp login aeon`. Or install this repo as a plugin:
+
+```bash
+codex plugin marketplace add aeonfun/aeon-mcp
+```
 
 ### Gemini CLI
 
@@ -79,9 +83,40 @@ Or add this to `.vscode/mcp.json`:
 copilot plugin install aeonfun/aeon-mcp
 ```
 
+### Kimi Code
+
+In Kimi Code, run `/plugins install https://github.com/aeonfun/aeon-mcp`, then `/mcp-config login aeon` to sign in.
+
+### Kiro
+
+Add this to `~/.kiro/settings/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "aeon": { "url": "https://www.aeon.fun/connect/mcp" }
+  }
+}
+```
+
+### LM Studio
+
+[Add to LM Studio](https://lmstudio.ai/install-mcp?name=aeon&config=eyJ1cmwiOiJodHRwczovL3d3dy5hZW9uLmZ1bi9jb25uZWN0L21jcCJ9), or add the same `mcpServers` block to `mcp.json` in LM Studio.
+
 ### Grok
 
 In Grok, open **Connectors > New > Custom** and paste `https://www.aeon.fun/connect/mcp`.
+
+### Chat apps
+
+These apps let you add Aeon yourself as a custom connector with the server URL. Each opens a GitHub sign-in on first use.
+
+- **Le Chat (Mistral):** Connectors > Add Connector > Custom MCP Connector
+- **Perplexity and Comet:** Settings > Connectors > Custom connector > Remote
+- **Gemini:** Settings > Connected Apps > Custom apps > Add a custom app
+- **Notion Agent:** Settings > Connections > Add Custom MCP
+- **Copilot Studio:** Tools > Add a tool > Model Context Protocol, OAuth with dynamic discovery
+- **Amazon Quick:** Connectors > Create > MCP
 
 ### Any other MCP client
 
@@ -101,11 +136,14 @@ In Grok, open **Connectors > New > Custom** and paste `https://www.aeon.fun/conn
 
 | File | For |
 | --- | --- |
-| `plugin.json` + `mcp.json` | [Agent Plugins](https://agent-plugins.org) standard (GitHub Copilot CLI, VS Code, Cursor) |
+| `plugin.json` + `mcp.json` | [Agent Plugins](https://agent-plugins.org) standard (Codex, GitHub Copilot CLI, VS Code, Cursor, Kiro) |
+| `.agents/plugins/marketplace.json` | Codex plugin marketplace |
 | `.claude-plugin/` + `.mcp.json` | Claude Code plugin and marketplace |
 | `.cursor-plugin/plugin.json` | Cursor plugin |
 | `.grok-plugin/plugin.json` | Grok Build plugin |
 | `gemini-extension.json` + `GEMINI.md` | Gemini CLI extension |
+| `.kimi-plugin/plugin.json` | Kimi Code plugin |
+| `.minimax-plugin/plugin.json` + `aeon.mcp.json` | MiniMax plugin |
 
 Every file only points at `https://www.aeon.fun/connect/mcp`. No code runs on your machine, and the plugin reads no local files or environment variables.
 

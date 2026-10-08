@@ -1,0 +1,20 @@
+{
+  "name": "aeon",
+  "interface": {
+    "displayName": "Aeon"
+  },
+  "plugins": [
+    {
+      "name": "aeon",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

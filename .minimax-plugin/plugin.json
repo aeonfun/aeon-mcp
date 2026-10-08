@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "aeon",
+  "displayName": "Aeon",
+  "version": "1.1.0",
+  "description": "Connect your coding agent to Aeon's hosted MCP server to run and manage your Aeon autonomous agent from chat: skills, runs, memory, strategy, packs and settings. Sign in with GitHub, no API key.",
+  "author": "Aaron Elijah Mars",
+  "icon": "assets/logo.png",
+  "category": "Code",
+  "exampleQueries": [
+    "List my Aeon skills and run the daily digest",
+    "Show my last Aeon runs and read the output of the latest one",
+    "Search my Aeon agent memory for notes about pricing"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "aeon.mcp.json"
+  ],
+  "skills": []
+}
