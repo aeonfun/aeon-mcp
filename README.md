@@ -103,6 +103,14 @@ In Kimi Code, run `/plugins install https://github.com/aeonfun/aeon-mcp`, then `
 
 [Add to LM Studio](https://lmstudio.ai/install-mcp?name=aeon&config=eyJ1cmwiOiJodHRwczovL3d3dy5hZW9uLmZ1bi9jb25uZWN0L21jcCJ9), or add the same `mcpServers` block to `mcp.json` in LM Studio.
 
+### OpenClaw
+
+```bash
+openclaw plugins install clawhub:aeon
+```
+
+Then enable the plugin and connect your Aeon agent when OpenClaw asks.
+
 ### Grok
 
 In Grok, open **Connectors > New > Custom** and paste `https://www.aeon.fun/connect/mcp`.
@@ -144,6 +152,7 @@ These apps let you add Aeon yourself as a custom connector with the server URL. 
 | `gemini-extension.json` + `GEMINI.md` | Gemini CLI extension |
 | `.kimi-plugin/plugin.json` | Kimi Code plugin |
 | `.minimax-plugin/plugin.json` + `aeon.mcp.json` | MiniMax plugin |
+| `openclaw.plugin.json` + `package.json` | OpenClaw plugin (ClawHub) |
 
 Every file only points at `https://www.aeon.fun/connect/mcp`. No code runs on your machine, and the plugin reads no local files or environment variables.
 

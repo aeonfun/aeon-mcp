@@ -1,0 +1,25 @@
+{
+  "id": "aeon",
+  "name": "Aeon",
+  "version": "1.1.0",
+  "description": "Run and manage your Aeon autonomous agent from chat: skills, runs, memory, strategy, packs and settings. Sign in with GitHub, no API key.",
+  "categories": [
+    "productivity"
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "mcpServers": {
+    "aeon": {
+      "url": "https://www.aeon.fun/connect/mcp",
+      "description": "Enable this plugin and connect your Aeon agent in OpenClaw. Sign in with GitHub and pick which Aeon agent (repo) OpenClaw may use. No API key.",
+      "auth": "oauth",
+      "oauth": {
+        "scope": "aeon"
+      },
+      "transport": "streamable-http"
+    }
+  }
+}

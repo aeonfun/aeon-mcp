@@ -1,0 +1,10 @@
+{
+  "name": "aeon",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Run and manage your Aeon autonomous agent from chat: skills, runs, memory, strategy, packs and settings. Sign in with GitHub, no API key.",
+  "license": "MIT",
+  "author": "Aaron Elijah Mars",
+  "homepage": "https://www.aeon.fun/connect",
+  "repository": "github:aeonfun/aeon-mcp"
+}
