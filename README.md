@@ -89,7 +89,7 @@ In Kimi Code, run `/plugins install https://github.com/aeonfun/aeon-mcp`, then `
 
 ### Kiro
 
-Add this to `~/.kiro/settings/mcp.json`:
+[Add to Kiro](https://kiro.dev/launch/mcp/add?name=aeon&config=%7B%22url%22%3A%22https%3A%2F%2Fwww.aeon.fun%2Fconnect%2Fmcp%22%7D), or add this to `~/.kiro/settings/mcp.json`:
 
 ```json
 {
