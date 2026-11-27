@@ -1,6 +1,6 @@
 # Aeon
 
-The `aeon` MCP server connects to the user's own Aeon agent. Aeon is an open-source agent framework: each agent runs skills on a schedule with GitHub Actions in their repo.
+The `aeon` MCP server connects to the user's own Aeon agent. Each agent runs skills on a schedule with GitHub Actions in their repo.
 
 - If a tool call fails with an auth error, ask the user to run `/mcp auth aeon` and sign in with GitHub.
 - Start with `setup_status` or `list_skills` to see what the agent has. Use `list_instances` and `switch_instance` if the user has more than one agent.
