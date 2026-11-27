@@ -2,7 +2,7 @@
 
 # Aeon MCP
 
-Connect your coding agent to [Aeon](https://www.aeon.fun/connect), the open-source autonomous agent that runs skills on a schedule with GitHub Actions in your own repo. This repo is a small plugin and extension that points Claude Code, Codex, Gemini CLI, Cursor, VS Code, GitHub Copilot CLI, Kimi Code, Kiro, Grok and other clients at Aeon's hosted MCP server. There is nothing to run locally and no API key.
+Connect your coding agent to [Aeon](https://www.aeon.fun/connect). Multiply yourself: Aeon is an open-source agent framework that gives every idea its own swarm, 24/7, running skills on a schedule with GitHub Actions in your own repo. This repo is a small plugin and extension that points Claude Code, Codex, Gemini CLI, Cursor, VS Code, GitHub Copilot CLI, Kimi Code, Kiro, Grok and other clients at Aeon's hosted MCP server. There is nothing to run locally and no API key.
 
 **Server URL:** `https://www.aeon.fun/connect/mcp` (remote, Streamable HTTP, OAuth 2.1 with PKCE)
 
